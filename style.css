@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: darkseagreen;
+}
+.grid-container {
+  display: grid;
+}
