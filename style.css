@@ -1,9 +1,45 @@
-.container {
-  display: flex;
+.bg {
   min-width: 100vh;
   min-height: 100vh;
   background-color: darkseagreen;
 }
+.flex-container {
+  display: flex;
+  min-width: 75%;
+  min-height: 75%;
+  padding: 20px;
+  justify-content: center;
+}
+.flex-item {
+  /* dont need? */
+}
 .grid-container {
   display: grid;
+  grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;
+  grid-template-rows: [row-start] 1fr [row1] 1fr [row2] 1fr [row3];
+  border: solid 2px red;
+  gap: 10px;
+}
+@media (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr;
+    grid-template-rows: [row-start] 1fr [row1] 1fr [row2] 1fr [row3];
+    border: solid 2px red;
+    gap: 5px;
+  }
+}
+@media (max-width: 568px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: [col1] 1fr;
+    grid-template-rows: [row-start] 1fr [row1] 1fr [row2] 1fr [row3];
+    border: solid 2px red;
+    gap: 5px;
+  }
+}
+.item {
+  min-width: 200px;
+  min-height: 200px;
+  border: solid 2px blue;
 }
